@@ -1,6 +1,6 @@
 ## Novoalign
 #### need license
-
+`
 #!/bin/bash
 
 source hg38_pipeline.cfg
@@ -14,3 +14,4 @@ ${novo_path}/novoalign -d ${ref_fasta_path}/hg38_v0_Homo_sapiens_assembly38.nix 
 samtools view -@ 64 -Sb ${Novo_output}/$1_Novo.sam > ${View_path}/$3_$1_Novo.bam
 samtools sort -@ 64 ${View_path}/$3_$1_Novo.bam -o ${View_path}/$3_$1_Novo_sort.bam
 samtools index -@ 64 ${View_path}/$3_$1_Novo_sort.bam
+`
